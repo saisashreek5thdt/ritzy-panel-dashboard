@@ -64,7 +64,11 @@
       type="text/css"
       href="../assets/css/vendors/scrollbar.css"
     />
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/datatables.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -439,14 +443,18 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Student Information Page</h3>
+                  <h3>Student Enrollment Page</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Student Information</li>
+                    <li class="breadcrumb-item">
+                      <a href="studentinfo.html"
+                        ><i data-feather="user"></i>&nbsp;Student Information</a
+                      >
+                    </li>
                     <li class="breadcrumb-item active">Default</li>
                   </ol>
                 </div>
@@ -459,113 +467,298 @@
               <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header">
-                    <h5>Create Student Record</h5>
+                    <h5>Basic HTML input control</h5>
                   </div>
-                  <div class="card-body">
-                    <a href="studentcreate.html">
-                      <button class="btn btn-square btn-secondary btn-lg" type="button" title="btn btn-square btn-secondary btn-lg">Create New</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <!-- Zero Configuration  Starts-->
-              <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h5>Student Records</h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="display" id="basic-1">
-                        <thead>
-                          <tr>
-                            <th>Student UID</th>
-                            <th>Student Name</th>
-                            <th>Student Image</th>
-                            <th>Age</th>
-                            <th>Student class</th>
-                            <th>Editor</th>
-                            <th>Actions</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>RSIT0001</td>
-                            <td>Sai Sashreek</td>
-                            <td>Image</td>
-                            <td>3</td>
-                            <td>K1</td>
-                            <td>Frontoffice</td>
-                            <td>
-                              <a href="#">
-                                <i data-feather="eye" style="color: #219F94"></i>
-                              </a>
-                              <a href="#">
-                                <i data-feather="edit-2" style="color: #1C6DD0"></i>
-                              </a>
-                              <a href="#">
-                                <i data-feather="trash-2" style="color: #FF5D5D"></i>
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Zero Configuration  Ends-->
-            </div>
-            <div class="row second-chart-list third-news-update">
-              <div class="col-xl-4 xl-50 notification box-col-6">
-                <div class="card">
-                  <div class="card-header card-no-border">
-                    <div class="header-top">
-                      <h5 class="m-0">notification</h5>
-                      <div class="card-header-right-icon">
-                        <div class="dropdown">
-                          <button
-                            class="btn dropdown-toggle"
-                            id="dropdownMenuButton"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            Today
-                          </button>
-                          <div
-                            class="dropdown-menu dropdown-menu-end"
-                            aria-labelledby="dropdownMenuButton"
-                          >
-                            <a class="dropdown-item" href="#">Today</a
-                            ><a class="dropdown-item" href="#">Tomorrow</a
-                            ><a class="dropdown-item" href="#">Yesterday </a>
+                  <form class="form theme-form">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <div class="mb-3 row">
+                            <label
+                              class="col-sm-3 col-form-label"
+                              for="selectStatus"
+                              >Select Status</label
+                            >
+                            <div class="col-sm-9">
+                              <select
+                                class="form-select btn-square digits"
+                                id="selectStatus"
+                              >
+                                <option>Please Select Status</option>
+                                <option>Active</option>
+                                <option>Deactive</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Photo</label>
+                            <div class="col-sm-9">
+                              <input class="form-control" type="file" />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >First Name</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter Student First Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >Last Name</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter Student Last Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label
+                              class="col-sm-3 col-form-label"
+                              for="selectGender"
+                              >Select Gender</label
+                            >
+                            <div class="col-sm-9">
+                              <select
+                                class="form-select btn-square digits"
+                                id="selectGender"
+                              >
+                                <option>Please Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >Password</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control"
+                                type="password"
+                                placeholder="Password input"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">D.O.B</label>
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control digits"
+                                type="date"
+                                value="2018-01-01"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label
+                              class="col-sm-3 col-form-label"
+                              for="selectClass"
+                              >Select Class</label
+                            >
+                            <div class="col-sm-9">
+                              <select
+                                class="form-select btn-square digits"
+                                id="selectClass"
+                              >
+                                <option>Please Select Class</option>
+                                <option>K1</option>
+                                <option>K2</option>
+                                <option>Nursery</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >Primary Phone Number</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control digits"
+                                type="tel"
+                                placeholder="Enter Primary Phone Number"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >Secondary Phone Number</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control m-input digits"
+                                type="tel"
+                                placeholder="Enter Secondary Phone Number"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >Address</label
+                            >
+                            <div class="col-sm-9">
+                              <textarea
+                                class="form-control"
+                                rows="5"
+                                cols="5"
+                                placeholder="Enter Complete House Address"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label" for="selectCity">City</label>
+                            <div class="col-sm-9">
+                                <select
+                                class="form-select btn-square digits"
+                                id="selectCity"
+                              >
+                                <option>Please Select City</option>
+                                <option>Hyderabad</option>
+                                <option>Bangalore</option>
+                                <option>Delhi</option>
+                                <option>Ahmadabad</option>
+                                <option>Mumbai</option>
+                                <option>Pune</option>
+                                <option>Surat</option>
+                                <option>Gurugram</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label" for="selectState">State</label>
+                            <div class="col-sm-9">
+                                <select
+                                class="form-select btn-square digits"
+                                id="selectState"
+                              >
+                                <option>Please Select State</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Karnataka</option>
+                                <option>Delhi</option>
+                                <option>Gujurat</option>
+                                <option>Maharashtra</option>
+                                <option>Telangana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>West Bengal</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"
+                              >Date and time</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control digits"
+                                id="example-datetime-local-input"
+                                type="datetime-local"
+                                value="2018-01-19T18:45:00"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Month</label>
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control digits"
+                                type="month"
+                                value="2018-01"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Week</label>
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control digits"
+                                type="week"
+                                value="2018-W09"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Time</label>
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control digits"
+                                type="time"
+                                value="21:45:00"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Color picker</label
+                            >
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control form-control-color"
+                                type="color"
+                                value="#563d7c"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">
+                              Maximum Length
+                            </label>
+                            <div class="col-sm-9">
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Content must be in 6 characters"
+                                maxlength="6"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Static Text</label
+                            >
+                            <div class="col-sm-9">
+                              <div class="form-control-static">
+                                Hello !... This is static text
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label"
+                              >Textarea</label
+                            >
+                            <div class="col-sm-9">
+                              <textarea
+                                class="form-control"
+                                rows="5"
+                                cols="5"
+                                placeholder="Default textarea"
+                              ></textarea>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card-body pt-0">
-                    <div class="media">
-                      <div class="media-body">
-                        <p>20-04-2020 <span>10:10</span></p>
-                        <h6>Updated Product</h6>
-                        <span>Quisque a consequat ante sit amet magna...</span>
+                    <div class="card-footer text-end">
+                      <div class="col-sm-9 offset-sm-3">
+                        <button class="btn btn-secondary" type="submit">
+                          Submit
+                        </button>
+                        <input
+                          class="btn btn-light"
+                          type="reset"
+                          value="Cancel"
+                        />
                       </div>
                     </div>
-                    <div class="media">
-                      <div class="media-body">
-                        <p>
-                          20-04-2020<span class="ps-1">Today</span
-                          ><span class="badge badge-secondary">New</span>
-                        </p>
-                        <h6>Tello just like your product</h6>
-                        <span>Quisque a consequat ante sit amet magna... </span>
-                      </div>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -597,11 +790,9 @@
     <!-- Sidebar jquery-->
     <script src="../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>    
+    <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="../assets/js/dashboard/default.js"></script>
-    <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>

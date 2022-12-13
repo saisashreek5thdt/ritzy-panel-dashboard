@@ -64,20 +64,11 @@
       type="text/css"
       href="../assets/css/vendors/scrollbar.css"
     />
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
     <link
       rel="stylesheet"
       type="text/css"
       href="../assets/css/vendors/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../assets/css/vendors/chartist.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../assets/css/vendors/date-picker.css"
     />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
@@ -250,17 +241,18 @@
                     <a href="#"
                       ><i data-feather="settings"></i><span>Settings</span></a
                     >
-                  </li>                  
+                  </li>
                   <li>
                     <a href="#"
-                      ><i data-feather="file-text"></i><span>Make Notes</span></a
+                      ><i data-feather="file-text"></i
+                      ><span>Make Notes</span></a
                     >
                   </li>
                   <li>
                     <a href="../index.html"
                       ><i data-feather="log-out"> </i><span>Log out</span></a
                     >
-                  </li>                
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -284,7 +276,7 @@
                   alt=""
               /></a> -->
               <a href="dashboard.html">
-                <p style="font-size: 1.2rem;">Ritzy Panel</p>
+                <p style="font-size: 1.2rem">Ritzy Panel</p>
               </a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
               <div class="toggle-sidebar">
@@ -322,9 +314,10 @@
                     </div>
                   </li>
                   <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title link-nav" href="dashboard.html"
-                      ><i data-feather="home"></i
-                      ><span>Dashboard </span></a
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="dashboard.html"
+                      ><i data-feather="home"></i><span>Dashboard </span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -355,16 +348,14 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="budget.html"
-                      ><i data-feather="pie-chart"> </i
-                      ><span>Budget</span></a
+                      ><i data-feather="pie-chart"> </i><span>Budget</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="attendance.html"
-                      ><i data-feather="book"> </i
-                      ><span>Attendance</span></a
+                      ><i data-feather="book"> </i><span>Attendance</span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -379,8 +370,7 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="announcement.html"
-                      ><i data-feather="bell"> </i
-                      ><span>Announcements</span></a
+                      ><i data-feather="bell"> </i><span>Announcements</span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -395,32 +385,28 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="homework.html"
-                      ><i data-feather="file-text"> </i
-                      ><span>Homework</span></a
+                      ><i data-feather="file-text"> </i><span>Homework</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="library.html"
-                      ><i data-feather="database"> </i
-                      ><span>Library</span></a
+                      ><i data-feather="database"> </i><span>Library</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="hostel.html"
-                      ><i data-feather="layers"> </i
-                      ><span>Hostel</span></a
+                      ><i data-feather="layers"> </i><span>Hostel</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="certificate.html"
-                      ><i data-feather="award"> </i
-                      ><span>Certificate</span></a
+                      ><i data-feather="award"> </i><span>Certificate</span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -435,16 +421,14 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="reports.html"
-                      ><i data-feather="package"> </i
-                      ><span>Reports</span></a
+                      ><i data-feather="package"> </i><span>Reports</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="announcement.html"
-                      ><i data-feather="cpu"> </i
-                      ><span>Access Manager</span></a
+                      ><i data-feather="cpu"> </i><span>Access Manager</span></a
                     >
                   </li>
                 </ul>
@@ -458,15 +442,20 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Certificate Page</h3>
+                  <h3>Front Office</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Certificate</li>
-                    <li class="breadcrumb-item active">Default</li>
+                    <li class="breadcrumb-item">
+                      <a href="frontoffice.html">Frontoffice</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="admission_enquiry.html">Admission Enquiry</a>
+                    </li>
+                    <li class="breadcrumb-item active">Active Admission Enquiry</li>
                   </ol>
                 </div>
               </div>
@@ -474,83 +463,63 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row second-chart-list third-news-update">
-              <div class="col-xl-4 xl-50 notification box-col-6">
-                <div class="card">
-                  <div class="card-header card-no-border">
-                    <div class="header-top">
-                      <h5 class="m-0">notification</h5>
-                      <div class="card-header-right-icon">
-                        <div class="dropdown">
-                          <button
-                            class="btn dropdown-toggle"
-                            id="dropdownMenuButton"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            Today
-                          </button>
-                          <div
-                            class="dropdown-menu dropdown-menu-end"
-                            aria-labelledby="dropdownMenuButton"
-                          >
-                            <a class="dropdown-item" href="#">Today</a
-                            ><a class="dropdown-item" href="#">Tomorrow</a
-                            ><a class="dropdown-item" href="#">Yesterday </a>
-                          </div>
+            <div class="row">
+              <div class="col-xl-12 xl-60">
+                <div class="row">
+                  <!-- Zero Configuration  Starts-->
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Active Admission Enquiry Records</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <table class="display" id="basic-1">
+                            <thead>
+                              <tr>
+                                <th>Enquiry ID</th>
+                                <th>Student Name (First + Last Name)</th>
+                                <th>Age</th>
+                                <th>Enquired class</th>
+                                <th>Editor</th>
+                                <th>Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>RSIT0001</td>
+                                <td>Sai Sashreek</td>
+                                <td>3</td>
+                                <td>K1</td>
+                                <td>Frontoffice</td>
+                                <td>
+                                  <a href="#">
+                                    <i
+                                      data-feather="eye"
+                                      style="color: #219f94"
+                                    ></i>
+                                  </a>
+                                  <a href="#">
+                                    <i
+                                      data-feather="edit-2"
+                                      style="color: #1c6dd0"
+                                    ></i>
+                                  </a>
+                                  <a href="#">
+                                    <i
+                                      data-feather="trash-2"
+                                      style="color: #ff5d5d"
+                                    ></i>
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-body pt-0">
-                    <div class="media">
-                      <div class="media-body">
-                        <p>20-04-2020 <span>10:10</span></p>
-                        <h6>
-                          Updated Product<span class="dot-notification"></span>
-                        </h6>
-                        <span>Quisque a consequat ante sit amet magna...</span>
-                      </div>
-                    </div>
-                    <div class="media">
-                      <div class="media-body">
-                        <p>
-                          20-04-2020<span class="ps-1">Today</span
-                          ><span class="badge badge-secondary">New</span>
-                        </p>
-                        <h6>
-                          Tello just like your product<span
-                            class="dot-notification"
-                          ></span>
-                        </h6>
-                        <span>Quisque a consequat ante sit amet magna... </span>
-                      </div>
-                    </div>
-                    <div class="media">
-                      <div class="media-body">
-                        <div class="d-flex mb-3">
-                          <div class="inner-img">
-                            <img
-                              class="img-fluid"
-                              src="../assets/images/notification/1.jpg"
-                              alt="Product-1"
-                            />
-                          </div>
-                          <div class="inner-img">
-                            <img
-                              class="img-fluid"
-                              src="../assets/images/notification/2.jpg"
-                              alt="Product-2"
-                            />
-                          </div>
-                        </div>
-                        <span class="mt-3"
-                          >Quisque a consequat ante sit amet magna...</span
-                        >
-                      </div>
-                    </div>
-                  </div>
+                  <!-- Zero Configuration  Ends-->
                 </div>
               </div>
             </div>
@@ -582,27 +551,13 @@
     <!-- Sidebar jquery-->
     <script src="../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>
-    <script src="../assets/js/chart/chartist/chartist.js"></script>
-    <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
-    <script src="../assets/js/chart/knob/knob.min.js"></script>
-    <script src="../assets/js/chart/knob/knob-chart.js"></script>
-    <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
-    <script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>    
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="../assets/js/dashboard/default.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-    <script src="../assets/js/typeahead/handlebars.js"></script>
-    <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="../assets/js/typeahead-search/handlebars.js"></script>
-    <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
-    <!-- login js-->
-    <!-- Plugin used-->
   </body>
 </html>

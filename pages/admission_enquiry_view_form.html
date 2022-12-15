@@ -64,7 +64,11 @@
       type="text/css"
       href="../assets/css/vendors/scrollbar.css"
     />
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/datatables.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -453,9 +457,11 @@
                       <a href="frontoffice.html">Frontoffice</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="admission_enquiry.html">Admission Enquiry</a>
+                      <a href="admission_enquiry.html">Admission Enquiry</a>
                     </li>
-                    <li class="breadcrumb-item active">Old Admission Enquiry</li>
+                    <li class="breadcrumb-item active">
+                      View Admission Enquiry
+                    </li>
                   </ol>
                 </div>
               </div>
@@ -466,60 +472,203 @@
             <div class="row">
               <div class="col-xl-12 xl-60">
                 <div class="row">
-                  <!-- Zero Configuration  Starts-->
-                  <div class="col-sm-12">
-                    <div class="card">
-                      <div class="card-header">
-                        <h5>Old Admission Enquiry Records</h5>
-                      </div>
-                      <div class="card-body">
-                        <div class="table-responsive">
-                          <table class="display" id="basic-1">
-                            <thead>
-                              <tr>
-                                <th>Enquiry ID</th>
-                                <th>Student Name (First + Last Name)</th>
-                                <th>Age</th>
-                                <th>Enquired class</th>
-                                <th>Editor</th>
-                                <th>Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>RSIT0001</td>
-                                <td>Sai Sashreek</td>
-                                <td>3</td>
-                                <td>K1</td>
-                                <td>Frontoffice</td>
-                                <td>
-                                  <a href="admission_enquiry_view_form.html">
-                                    <i
-                                      data-feather="eye"
-                                      style="color: #219f94"
-                                    ></i>
-                                  </a>
-                                  <a href="#">
-                                    <i
-                                      data-feather="edit-2"
-                                      style="color: #1c6dd0"
-                                    ></i>
-                                  </a>
-                                  <a href="#">
-                                    <i
-                                      data-feather="trash-2"
-                                      style="color: #ff5d5d"
-                                    ></i>
-                                  </a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                  <div class="card">
+                    <div class="card-header">
+                      <a href="#">
+                        <button
+                          class="btn btn-square btn-secondary btn-lg"
+                          type="button"
+                          title="btn btn-square btn-secondary btn-lg"
+                        >
+                          Convert Enquiry To Lead
+                        </button>
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <div class="col-xs-12">
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <h6 class="text-center">
+                              ---------- Student Details ------------
+                            </h6>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Admission Enquiry ID</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">ENQSTU0001</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Name (First + Last Name)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Arjun Pandey</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student D.O.B (DD/MM/YYYY)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">04/08/2019</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Gender</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Boy</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Enquired Class</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Junior KG</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Fees Enquired (Class Based)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                <i class="fa fa-inr" aria-hidden="true"></i>
+                                100000
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Previos School Name</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">School Name</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Previos Grade</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Grade Name</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <h6 class="text-center">
+                              ---------- Parent Details ------------
+                            </h6>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Name (First + Last Name)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Anurag Pandey</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Name (Relation with Student)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Father</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Phone Number</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                (+91) 998 - 836 - 4159
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Email</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                anurag@gmail.com
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Qualification</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">B.Tech C.S.E</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Profession</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                Project Manager
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <h6 class="text-center">
+                              ---------- Additional Details ------------
+                            </h6>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Additional Details</label
+                            >
+                            <div class="col-sm-9">
+                              <p class="form-control-static">
+                                Additional Information Captured by Current Front
+                                Office Team
+                              </p>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <h6 class="text-center">
+                              ---------- Staff Details ------------
+                            </h6>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Staff ID</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">MSIST0007</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Staff Name</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Roshan Singh</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Date / Day</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                (13 / 12 / 2022 ) & Tuesday
+                              </h6>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Zero Configuration  Ends-->
                 </div>
               </div>
             </div>
@@ -551,7 +700,7 @@
     <!-- Sidebar jquery-->
     <script src="../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>    
+    <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="../assets/js/dashboard/default.js"></script>
     <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>

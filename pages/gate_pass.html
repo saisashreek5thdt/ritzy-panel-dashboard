@@ -64,20 +64,11 @@
       type="text/css"
       href="../assets/css/vendors/scrollbar.css"
     />
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
     <link
       rel="stylesheet"
       type="text/css"
       href="../assets/css/vendors/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../assets/css/vendors/chartist.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../assets/css/vendors/date-picker.css"
     />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
@@ -250,17 +241,18 @@
                     <a href="#"
                       ><i data-feather="settings"></i><span>Settings</span></a
                     >
-                  </li>                  
+                  </li>
                   <li>
                     <a href="#"
-                      ><i data-feather="file-text"></i><span>Make Notes</span></a
+                      ><i data-feather="file-text"></i
+                      ><span>Make Notes</span></a
                     >
                   </li>
                   <li>
                     <a href="../index.html"
                       ><i data-feather="log-out"> </i><span>Log out</span></a
                     >
-                  </li>                
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -284,7 +276,7 @@
                   alt=""
               /></a> -->
               <a href="dashboard.html">
-                <p style="font-size: 1.2rem;">Ritzy Panel</p>
+                <p style="font-size: 1.2rem">Ritzy Panel</p>
               </a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
               <div class="toggle-sidebar">
@@ -322,9 +314,10 @@
                     </div>
                   </li>
                   <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title link-nav" href="dashboard.html"
-                      ><i data-feather="home"></i
-                      ><span>Dashboard </span></a
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="dashboard.html"
+                      ><i data-feather="home"></i><span>Dashboard </span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -355,16 +348,14 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="budget.html"
-                      ><i data-feather="pie-chart"> </i
-                      ><span>Budget</span></a
+                      ><i data-feather="pie-chart"> </i><span>Budget</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="attendance.html"
-                      ><i data-feather="book"> </i
-                      ><span>Attendance</span></a
+                      ><i data-feather="book"> </i><span>Attendance</span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -379,8 +370,7 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="announcement.html"
-                      ><i data-feather="bell"> </i
-                      ><span>Announcements</span></a
+                      ><i data-feather="bell"> </i><span>Announcements</span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -395,32 +385,28 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="homework.html"
-                      ><i data-feather="file-text"> </i
-                      ><span>Homework</span></a
+                      ><i data-feather="file-text"> </i><span>Homework</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="library.html"
-                      ><i data-feather="database"> </i
-                      ><span>Library</span></a
+                      ><i data-feather="database"> </i><span>Library</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="hostel.html"
-                      ><i data-feather="layers"> </i
-                      ><span>Hostel</span></a
+                      ><i data-feather="layers"> </i><span>Hostel</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="certificate.html"
-                      ><i data-feather="award"> </i
-                      ><span>Certificate</span></a
+                      ><i data-feather="award"> </i><span>Certificate</span></a
                     >
                   </li>
                   <li class="sidebar-list">
@@ -435,16 +421,14 @@
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="reports.html"
-                      ><i data-feather="package"> </i
-                      ><span>Reports</span></a
+                      ><i data-feather="package"> </i><span>Reports</span></a
                     >
                   </li>
                   <li class="sidebar-list">
                     <a
                       class="sidebar-link sidebar-title link-nav"
                       href="announcement.html"
-                      ><i data-feather="cpu"> </i
-                      ><span>Access Manager</span></a
+                      ><i data-feather="cpu"> </i><span>Access Manager</span></a
                     >
                   </li>
                 </ul>
@@ -458,15 +442,17 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Front Office Page</h3>
+                  <h3>Front Office</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Frontoffice</li>
-                    <li class="breadcrumb-item active">Default</li>
+                    <li class="breadcrumb-item">
+                      <a href="frontoffice.html">Frontoffice</a>
+                    </li>
+                    <li class="breadcrumb-item active">Gate Pass</li>
                   </ol>
                 </div>
               </div>
@@ -478,10 +464,15 @@
               <div class="col-xl-12 xl-60">
                 <div class="row">
                   <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <a href="admission_enquiry.html">
+                    <a href="gate_pass_form.html">
                       <div class="card">
                         <div class="blog-box blog-grid text-center product-box">
-                          <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
+                          <div class="product-img">
+                            <img
+                              class="img-fluid top-radius-blog"
+                              src="../assets/images/faq/3.jpg"
+                              alt=""
+                            />
                             <div class="product-hover">
                               <ul>
                                 <li><i class="icon-link"></i></li>
@@ -489,110 +480,39 @@
                             </div>
                           </div>
                           <div class="blog-details-main">
-                            <h6 class="blog-bottom-details">Admission Enquiry</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </a>                    
-                  </div>
-                  <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <a href="gate_pass.html">
-                      <div class="card">
-                        <div class="blog-box blog-grid text-center product-box">
-                          <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                            <div class="product-hover">
-                              <ul>
-                                <li><i class="icon-link"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="blog-details-main">
-                            <h6 class="blog-bottom-details">Gate Pass</h6>
+                            <h6 class="blog-bottom-details">
+                              Create Gate Pass
+                            </h6>
                           </div>
                         </div>
                       </div>
                     </a>
                   </div>
-                  <!-- <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <div class="card">
-                      <div class="blog-box blog-grid text-center product-box">
-                        <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                          <div class="product-hover">
-                            <ul>
-                              <li><i class="icon-link"></i></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="blog-details-main">
-                          <h6 class="blog-bottom-details">Visitor Book</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <div class="card">
-                      <div class="blog-box blog-grid text-center product-box">
-                        <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                          <div class="product-hover">
-                            <ul>
-                              <li><i class="icon-link"></i></li>
-                            </ul>
+                    <a href="gate_pass_list.html">
+                      <div class="card">
+                        <div class="blog-box blog-grid text-center product-box">
+                          <div class="product-img">
+                            <img
+                              class="img-fluid top-radius-blog"
+                              src="../assets/images/faq/3.jpg"
+                              alt=""
+                            />
+                            <div class="product-hover">
+                              <ul>
+                                <li><i class="icon-link"></i></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="blog-details-main">
+                            <h6 class="blog-bottom-details">
+                              Gate Pass Forms
+                            </h6>
                           </div>
                         </div>
-                        <div class="blog-details-main">
-                          <h6 class="blog-bottom-details">Phone Call Log</h6>
-                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <div class="card">
-                      <div class="blog-box blog-grid text-center product-box">
-                        <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                          <div class="product-hover">
-                            <ul>
-                              <li><i class="icon-link"></i></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="blog-details-main">
-                          <h6 class="blog-bottom-details">Postal Dispatch</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <div class="card">
-                      <div class="blog-box blog-grid text-center product-box">
-                        <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                          <div class="product-hover">
-                            <ul>
-                              <li><i class="icon-link"></i></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="blog-details-main">
-                          <h6 class="blog-bottom-details">Postal Recieve</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <div class="card">
-                      <div class="blog-box blog-grid text-center product-box">
-                        <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                          <div class="product-hover">
-                            <ul>
-                              <li><i class="icon-link"></i></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="blog-details-main">
-                          <h6 class="blog-bottom-details">Complain</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -624,27 +544,13 @@
     <!-- Sidebar jquery-->
     <script src="../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>
-    <script src="../assets/js/chart/chartist/chartist.js"></script>
-    <script src="../assets/js/chart/chartist/chartist-plugin-tooltip.js"></script>
-    <script src="../assets/js/chart/knob/knob.min.js"></script>
-    <script src="../assets/js/chart/knob/knob-chart.js"></script>
-    <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
-    <script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>    
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="../assets/js/dashboard/default.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-    <script src="../assets/js/typeahead/handlebars.js"></script>
-    <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="../assets/js/typeahead-search/handlebars.js"></script>
-    <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
-    <!-- login js-->
-    <!-- Plugin used-->
   </body>
 </html>

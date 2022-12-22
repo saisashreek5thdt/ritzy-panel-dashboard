@@ -64,7 +64,11 @@
       type="text/css"
       href="../assets/css/vendors/scrollbar.css"
     />
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/datatables.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -276,7 +280,7 @@
                   alt=""
               /></a> -->
               <a href="dashboard.html">
-                <p style="font-size: 1.2rem;">My School Italy SMS Portal</p>
+                <p style="font-size: 1.2rem">My School Italy SMS Portal</p>
               </a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
               <div class="toggle-sidebar">
@@ -442,15 +446,17 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Student Information Page</h3>
+                  <h3>Student Information - Report</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Student Information</li>
-                    <li class="breadcrumb-item active">Default</li>
+                    <li class="breadcrumb-item">
+                      <a href="studentinfo.html">Student Information</a>
+                    </li>
+                    <li class="breadcrumb-item active">Student Report</li>
                   </ol>
                 </div>
               </div>
@@ -461,41 +467,216 @@
             <div class="row">
               <div class="col-xl-12 xl-60">
                 <div class="row">
-                  <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <a href="student_report.html">
-                      <div class="card">
-                        <div class="blog-box blog-grid text-center product-box">
-                          <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                            <div class="product-hover">
-                              <ul>
-                                <li><i class="icon-link"></i></li>
-                              </ul>
+                  <div class="card">
+                    <div class="card-header">
+                      <form>
+                        <div class="mb-3 row">
+                          <div class="col-sm-3">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Student User ID"
+                            />
+                          </div>
+                          <div class="col-sm-6">
+                            <button
+                              class="btn btn-square btn-info btn-lg"
+                              type="button"
+                              title="btn btn-square btn-info btn-lg"
+                            >
+                              Pull Student Report
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="card-body">
+                      <div class="col-xs-12">
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <h6 class="text-center">
+                              ---------- Student Details ------------
+                            </h6>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Admission ID</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">ENQSTU0001</h6>
                             </div>
                           </div>
-                          <div class="blog-details-main">
-                            <h6 class="blog-bottom-details">Student Report</h6>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Name (First + Last Name)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Arjun Pandey</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student D.O.B (DD/MM/YYYY)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">04/08/2019</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Gender</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Boy</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Class</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Junior KG</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Grade</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Grade 1</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Attendance (Present) </label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">20</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Attendance (Absent / Leaves) </label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">10</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Fees (Class Based)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                <i class="fa fa-inr" aria-hidden="true"></i>
+                                100000
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Payment Method </label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                Quarterly Payment
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Payment Paid </label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                <i class="fa fa-inr" aria-hidden="true"></i>
+                                20000
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Payment Balance </label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                <i class="fa fa-inr" aria-hidden="true"></i>
+                                80000
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Student Performance</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                Performing Well in all subjects
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <h6 class="text-center">
+                              ---------- Parent Details ------------
+                            </h6>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Name (First + Last Name)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Anurag Pandey</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Name (Relation with Student)</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">Father</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Phone Number</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                (+91) 998 - 836 - 4159
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Email</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                anurag@gmail.com
+                              </h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Qualification</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">B.Tech C.S.E</h6>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label pt-0"
+                              >Parent Profession</label
+                            >
+                            <div class="col-sm-9">
+                              <h6 class="form-control-static">
+                                Project Manager
+                              </h6>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </a>                    
-                  </div>
-                  <div class="col-xl-2 xl-50 col-sm-6 box-col-6">
-                    <a href="student_admission_form.html">
-                      <div class="card">
-                        <div class="blog-box blog-grid text-center product-box">
-                          <div class="product-img"><img class="img-fluid top-radius-blog" src="../assets/images/faq/3.jpg" alt="">
-                            <div class="product-hover">
-                              <ul>
-                                <li><i class="icon-link"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="blog-details-main">
-                            <h6 class="blog-bottom-details">Admission Form</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -528,7 +709,7 @@
     <!-- Sidebar jquery-->
     <script src="../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>    
+    <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="../assets/js/dashboard/default.js"></script>
     <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
